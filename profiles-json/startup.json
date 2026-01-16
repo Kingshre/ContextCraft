@@ -1,0 +1,7 @@
+﻿{
+  "rules": [
+    { "rule_id": "ST-TONE-001", "type": "tone", "action": "direct_high_energy_short_sentences", "reason": "Startup tone is direct, high-energy, and concise." },
+    { "rule_id": "ST-STRUCT-001", "type": "structural", "action": "recommend_problem_first", "reason": "Startup docs should lead with the problem and impact." },
+    { "rule_id": "ST-CONSTRAINT-001", "type": "constraint", "action": "avoid_jargon_blacklist", "reason": "Avoid empty startup jargon." }
+  ]
+}

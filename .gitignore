@@ -1,0 +1,13 @@
+# secrets
+apps/api/.env
+apps/api/.openai_key
+.env
+.env.*
+
+# node/pnpm
+node_modules
+.pnpm-store
+dist
+build
+*.log
+.DS_Store

@@ -1,0 +1,7 @@
+﻿{
+  "rules": [
+    { "rule_id": "GEN-TONE-001", "type": "tone", "action": "conversational_professional_no_jargon", "reason": "General tone should be clear, warm, and avoid jargon." },
+    { "rule_id": "GEN-STRUCT-001", "type": "structural", "action": "recommend_one_sentence_summary_first", "reason": "General docs benefit from a one-sentence summary upfront." },
+    { "rule_id": "GEN-CONSTRAINT-001", "type": "constraint", "action": "limit_passive_voice", "reason": "Prefer active voice for readability." }
+  ]
+}

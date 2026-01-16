@@ -1,0 +1,7 @@
+﻿{
+  "rules": [
+    { "rule_id": "ENT-TONE-001", "type": "tone", "action": "formal_measured_risk_aware", "reason": "Enterprise tone should be formal and risk-aware." },
+    { "rule_id": "ENT-EXEC-001", "type": "structural", "action": "recommend_executive_summary_if_long", "reason": "Enterprise documents over 500 words should include an executive summary." },
+    { "rule_id": "ENT-STRUCT-002", "type": "structural", "action": "recommend_risk_governance_sections", "reason": "Enterprise readers expect risk mitigation and governance." }
+  ]
+}
