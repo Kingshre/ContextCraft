@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 13% 8%;
+    --foreground: 220 10% 92%;
+
+    --card: 220 13% 11%;
+    --card-foreground: 220 10% 92%;
+
+    --popover: 220 13% 11%;
+    --popover-foreground: 220 10% 92%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 220 13% 8%;
+
+    --secondary: 220 13% 16%;
+    --secondary-foreground: 220 10% 75%;
+
+    --muted: 220 13% 14%;
+    --muted-foreground: 220 10% 55%;
+
+    --accent: 220 13% 18%;
+    --accent-foreground: 220 10% 92%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 0%;
+
+    --border: 220 13% 18%;
+    --input: 220 13% 14%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.5rem;
+
+    --font-sans: 'Inter', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    --sidebar-background: 220 13% 8%;
+    --sidebar-foreground: 220 10% 92%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 220 13% 8%;
+    --sidebar-accent: 220 13% 16%;
+    --sidebar-accent-foreground: 220 10% 92%;
+    --sidebar-border: 220 13% 18%;
+    --sidebar-ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: var(--font-sans);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+@layer components {
+  .diff-add {
+    @apply bg-success/15 text-success;
+  }
+
+  .diff-remove {
+    @apply bg-destructive/15 text-destructive;
+  }
+
+  .badge-modify {
+    @apply bg-primary/20 text-primary border-primary/30;
+  }
+
+  .badge-unchanged {
+    @apply bg-muted text-muted-foreground border-border;
+  }
+
+  .badge-rule {
+    @apply bg-accent text-accent-foreground border-border;
+  }
+
+  .panel {
+    @apply bg-card rounded-lg border border-border;
+  }
+
+  .status-success {
+    @apply bg-success/20 text-success border-success/30;
+  }
+
+  .status-error {
+    @apply bg-destructive/20 text-destructive border-destructive/30;
+  }
+
+  .status-idle {
+    @apply bg-muted text-muted-foreground border-border;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-border rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted-foreground/30;
+}
